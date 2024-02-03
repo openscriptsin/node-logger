@@ -11,7 +11,7 @@
     "tslint-fix": "tslint --fix --project tsconfig.json",
     "build": "yarn run generate-barrels && yarn run tslint-fix && yarn run tslint && tsc",
     "prepublishOnly": "yarn run tslint && tsc",
-    "postversion": "git push origin main && git push origin main --tags && npm publish"
+    "postversion": "git push origin main && git push origin main --tags && npm publish --access public"
   },
   "dependencies": {
     "inversify": "^6.0.2",
