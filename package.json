@@ -11,13 +11,14 @@
     "tslint-fix": "tslint --fix --project tsconfig.json",
     "build": "yarn run generate-barrels && yarn run tslint-fix && yarn run tslint && tsc",
     "prepublishOnly": "yarn run tslint && tsc",
-    "postversion": "git push origin master && git push origin master --tags && npm publish"
+    "postversion": "git push origin main && git push origin main --tags && npm publish"
   },
   "dependencies": {
     "inversify": "^6.0.2",
     "winston": "^3.11.0",
     "winston-daily-rotate-file": "^4.7.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.1"
   },
   "devDependencies": {
     "typescript": "5.3.3",
